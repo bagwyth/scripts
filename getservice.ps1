@@ -1,1 +1,5 @@
-﻿Get-Service -Name wuauserv
+﻿Param (
+    [string]$svcname
+)
+
+Get-Service -Name $svcname
